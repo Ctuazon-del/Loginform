@@ -1,0 +1,121 @@
+<html>
+<head>
+        <center><meta charset = "UTF-8"/>
+        <meta name = "viewport" content ="width=device-width, initial-scale=1,0" />
+
+       <!-- codes all for table, title-->
+        <table bgcolor = "lightcyan" width = "20%" height = "40%" id = "border" > 
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>   
+        <tr><td><title>Login</title>
+        </head>
+        <center><body id = "body">
+        <h1 style = text-align:center;><font color = "grey">Login</font></h1>
+        
+        <p id= "error-message" >Incorrect username or password</p> 
+        <h4><font color = "grey">Sign In To Your Account</font></h4>    
+            
+        <form>
+        <!-- labels -->
+        <label for="username"><font color = "white"> Username:<font/></label><br/>
+        <input title="Enter Username" onmouseover="" type="text" id="username" name="username"/><br/><br/>
+        
+        <label for="password"> Password:</label><br/>
+        <input title = "Enter Password" onmouseover="" type="password" id="password" name="password"><br/><br/></center>
+        
+        <!--checkbox-->
+        <center><input type="checkbox" id="remember" name="remember" />
+        <label for="remember">Remember me</label><br/><br/></center>
+        
+        <!-- buttons -->
+           <center><button type="button" id = "submit" onclick="checklogin()"><font color = "white">Log In</font></button>
+            <button type="button" id = "cancel" onclick="clearform()"><font color = "white">Cancel</font></button>
+            <br/><br/>
+            <button type="submit" id = "forget"><font color = "white">  Forget Password?   </font></button></td>
+        <td><img src = "LOGO.png" width "500px" height = "400px"></td></tr></center>
+        
+        
+        <!--css designs-->
+            
+            
+        <!-- bg codes like transparent, borders -->
+        <style>
+        #body
+        {
+        background-image: url(bg%20pic.jpg);
+        }
+        #submit
+        {
+        background-color: blue;
+        border-radius: 30px;   
+        cursor: pointer;
+        }
+        #cancel
+        {
+        background-color: red;
+        cursor: pointer;
+        }
+        #border
+        {
+        background-color: black;
+        background: rgba(0,0,0,0.6);
+        }
+        #forget
+        {
+        border-radius: 20px;
+        background-color: transparent;
+        cursor: pointer;
+        }
+        #remember
+        {
+        cursor: pointer;
+        }
+            #error-message{
+                color: white;
+            }
+        </style> 
+        <!-- end of css -->
+        
+        <script>
+        
+        // step 1: Set your correct username & password
+        var correctusername = "ExpOnly"
+        var correctpassword = "12345"
+        
+        // step 2: This function runs when submit is clicked
+        function checklogin() 
+        {
+        // read whatever the user typed into each field
+        var enteredusername = document.getElementById("username").value;
+        var enteredpassword = document.getElementById("password").value;
+        
+        if (enteredusername === correctusername && enteredpassword === correctpassword){
+        // if the password is correct and username it will go on index.html
+        window.location.href = "index.html";
+        } else {
+        document.getElementById("error-message").style.display = "block";   
+         }
+        }
+        // step 3: cancel button clears the form
+        function clearform()
+        {
+        document.getElementById("username").value="";
+        document.getElementById("password").value="";
+        document.getElementById("error-message").style.display = "none";
+        }
+        </script>
+        
+            
+            
+            
+            
+            
+            
+            
+    
+
+
+        
+          </center>
+        </form>
+    </body>
+</html>
