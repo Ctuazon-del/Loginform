@@ -1,123 +1,195 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-        <center><meta charset = "UTF-8"/>
-        <meta name = "viewport" content ="width=device-width, initial-scale=1,0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-       <!-- codes all for table, title-->
-        <table bgcolor = "lightcyan" width = "20%" height = "40%" id = "border" > 
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>   
-        <tr><td><title>Login</title>
-        </head>
-        <center><body id = "body">
-        <h1 style = text-align:center;><font color = "grey">Login</font></h1>
-        
-        <p id= "error-message" >Incorrect username or password</p> 
-        <h4><font color = "grey">Sign In To Your Account</font></h4>    
-            
-        <form>
-        <!-- labels -->
-        <label for="username"><font color = "white"> Username:<font/></label><br/>
-        <input title="Enter Username" onmouseover="" type="text" id="username" name="username"/><br/><br/>
-        
-        <label for="password"> Password:</label><br/>
-        <input title = "Enter Password" onmouseover="" type="password" id="password" name="password"><br/><br/></center>
-        
-        <!--checkbox-->
-        <center><input type="checkbox" id="remember" name="remember" />
-        <label for="remember">Remember me</label><br/><br/></center>
-        
-        <!-- buttons -->
-           <center><button type="button" id = "submit" onclick="checklogin()"><font color = "white">Log In</font></button>
-            <button type="button" id = "cancel" onclick="clearform()"><font color = "white">Cancel</font></button>
-            <br/><br/>
-            <button type="submit" id = "forget"><font color = "white">  Forget Password?   </font></button></td>
-        <td><img src = "LOGO.png" width "500px" height = "400px"></td></tr></center>
-        
-        
-        <!--css designs-->
-            
-            
-        <!-- bg codes like transparent, borders -->
-        <style>
-        #body
-        {
-        background-image: url(bg%20pic.jpg);
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.38)), url("bg pic.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            padding: 24px;
         }
-        #submit
-        {
-        background-color: blue;
-        border-radius: 30px;   
-        cursor: pointer;
-        }
-        #cancel
-        {
-        background-color: red;
-        cursor: pointer;
-        }
-        #border
-        {
-        background-color: black;
-        background: rgba(0,0,0,0.6);
-        }
-        #forget
-        {
-        border-radius: 20px;
-        background-color: transparent;
-        cursor: pointer;
-        }
-        #remember
-        {
-        cursor: pointer;
-        }
-        #error-message
-        {
-        color: white;
-        display: none;
-        }
-        </style> 
-        <!-- end of css -->
-        
-        <script>
-        
-        // step 1: Set your correct username & password
-        var correctusername = "admin"
-        var correctpassword = "1234"
-        
-        // step 2: This function runs when submit is clicked
-        function checklogin() 
-        {
-        // read whatever the user typed into each field
-        var enteredusername = document.getElementById("username").value;
-        var enteredpassword = document.getElementById("password").value;
-        
-        if (enteredusername === correctusername && enteredpassword === correctpassword){
-        // if the password is correct and username it will go on index.html
-        window.location.href = "exercise.html";
-        } else {
-        document.getElementById("error-message").style.display = "block";   
-         }
-        }
-        // step 3: cancel button clears the form
-        function clearform()
-        {
-        document.getElementById("username").value="";
-        document.getElementById("password").value="";
-        document.getElementById("error-message").style.display = "none";
-        }
-        </script>
-        
-            
-            
-            
-            
-            
-            
-            
-    
 
+        .login-card {
+            width: 100%;
+            max-width: 390px;
+            padding: 48px 30px 34px;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.32);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+        }
 
-        
-          </center>
+        .login-card h1 {
+            text-align: center;
+            font-size: 2.05rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .field {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .field input {
+            width: 100%;
+            height: 54px;
+            padding: 0 52px 0 22px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            background: rgba(255, 255, 255, 0.05);
+            color: #ffffff;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .field input::placeholder {
+            color: rgba(255, 255, 255, 0.72);
+        }
+
+        .field .icon {
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .options {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin: 8px 0 28px;
+            font-size: 0.98rem;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .remember input {
+            width: 16px;
+            height: 16px;
+            accent-color: #ffffff;
+            cursor: pointer;
+        }
+
+        .options a,
+        .register a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .options a:hover,
+        .register a:hover {
+            text-decoration: underline;
+        }
+
+        .submit-btn {
+            width: 100%;
+            height: 54px;
+            border: none;
+            border-radius: 999px;
+            background: #ffffff;
+            color: #2f2f2f;
+            font-size: 1.05rem;
+            cursor: pointer;
+            margin-bottom: 24px;
+        }
+
+        .register {
+            text-align: center;
+            font-size: 0.98rem;
+        }
+
+        #error-message {
+            display: none;
+            text-align: center;
+            color: #ffd7d7;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 480px) {
+            .login-card {
+                padding: 38px 20px 28px;
+            }
+
+            .options {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <h1>Login</h1>
+        <p id="error-message">Incorrect username or password</p>
+
+        <form onsubmit="checklogin(event)">
+            <div class="field">
+                <input title="Enter Username" type="text" id="username" name="username" placeholder="Username" />
+                <span class="icon">&#128100;</span>
+            </div>
+
+            <div class="field">
+                <input title="Enter Password" type="password" id="password" name="password" placeholder="Password" />
+                <span class="icon">&#128274;</span>
+            </div>
+
+            <div class="options">
+                <label class="remember" for="remember">
+                    <input type="checkbox" id="remember" name="remember" />
+                    <span>Remember Me</span>
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+
+            <p class="register">Don't have an account? <a href="#">Register</a></p>
         </form>
-    </body>
+    </div>
+
+    <script>
+        var correctusername = "admin";
+        var correctpassword = "1234";
+
+        function checklogin(event) {
+            event.preventDefault();
+
+            var enteredusername = document.getElementById("username").value;
+            var enteredpassword = document.getElementById("password").value;
+
+            if (enteredusername === correctusername && enteredpassword === correctpassword) {
+                window.location.href = "portfolio.html";
+            } else {
+                document.getElementById("error-message").style.display = "block";
+            }
+        }
+    </script>
+</body>
 </html>
