@@ -1,145 +1,555 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Portfolio</title>
-<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-</head>
-   <body id = "body"><marquee behavior = "alternate"><img src = "LOGO.png" width = "500px" height = "400px"></marquee>
-    <br><br><br><br><br><br><br><br><br><br><br>
-    <center><h1><font color = "white">Comp Tech. Christian V. Tuazon</font></h1>
-    <!--  Start of navigation -->
-    <table width = "25%" height = "5%" id = "Top">
-        <tr><th id = "navi"><a href = "#Contact">Go to Contact </a></th>
-           <th id = "navi"><a href = "#Services">Go to Services</a></th></tr></table>
-      <!-- end of navigation -->
-     
-     <!--Start of the images, paragraph, width, height,-->   
-    <br><br><br>
-    <table bgcolor = "lightcyan" width = "50%" height = "40%" id = "border"> 
-    <tr><td><h2 style = text-align:center>ABOUT ME</h2> 
-    <p>I am Christian Tuazon currently 20 Years Old studying at EARIST-MANILA and my course is Computer Technology i have knowledge in programming
-        and hardware components in computers and also one of my passion is playing online game which give me to purse in esport industry but i also
-        have passion in programming like C++, Python and currently planning to discover more programming knowledge but for now python is one of my
-        thing and i have also know how to make a data base system using VBA in excel.</p>
-        <center><img src = "received_2954075558094247.jpeg" width = "350px" height= "320px" id = "img"></center>
-        <br><br>
-        <center><a href = "#Top">Back to top</a></td></tr></center></table>
-    
-     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <table bgcolor = "lightcyan" width = "50%" height = "35%" id = "border">    
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <tr><td><h2 style = text-align:center; id = "Services">SERVICES</h2>
-        <p>I provide creating Enrollment system using VBA and helping you to learn about basic fundamental programming language
-        in C++ and Python, Floor Planning,set up a PC, Making a LOGO and Pilot Service Warrior to Immo</p>
-         <center><a href = "#Top">Back to top</a></td></tr></center></table>
-        
-        
-    <table bgcolor = "lightcyan" width = "40%" height = "25%" id = "border"> 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-     <tr><td style = text-align:center;><h2 id = "Contact">CONTACT ME</h2>
-        <p><img src = "images.png" width = "20px" height = "20px" id = "img"> Email: tuazonc410@gmail.com<br>
-    <img src = "264-2649962_press-contact-png-icon-telephone.png" width = "30px" height = "20px" id = "img">Number: 09511590303 <br>
-    <img src = "social-media-computer-icons-facebook-instagram-logo.jpg" width = "25px" height = "25px" id = "img"> Facebook: Christian Tuazon</p>
-    
-    <a href = "#Top">Back to top</a></td></tr></table>
-    <!--End of the images, paragraph, width, height,-->   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian Tuazon | Portfolio</title>
+<style>
+:root {
+  --page-bg: #9d9d9f;
+  --panel-bg: #090909;
+  --text-main: #f3ece8;
+  --text-soft: rgba(243, 236, 232, 0.78);
+  --grid-bg: #f3ece8;
+  --grid-line: rgba(0, 0, 0, 0.16);
+  --chip-a: #7de7e2;
+  --chip-b: #ffd400;
+  --chip-c: #ff8a00;
+  --chip-d: #ff4e81;
+  --chip-e: #a8ef73;
+  --chip-f: #84e7e4;
+}
 
+* {
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+}
 
-<!--colors and borders-->
-        <style>
-       *
-        {
-         box-sizing: border-box;
-        }
-       #navi
-        {
-         background: linear-gradient(135deg, #78f0ff, #35d4e8);
-         border-radius: 20px;
-         padding: 12px;
-         border: 1px solid rgba(255,255,255,0.35);
-         box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-        }
-       #body
-        {
-        background:
-        linear-gradient(rgba(5, 15, 26, 0.84), rgba(5, 15, 26, 0.88)),
-        url('bg pic.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        color: white;
-        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        }
-      #border
-        {
-        border-radius: 20px;
-        border: 1px solid rgba(255,255,255,0.18);
-        box-shadow: 0 18px 40px rgba(0,0,0,0.35);
-        background-color: rgba(224, 255, 255, 0.94);
-        color: #123;
-        }
-     #img
-        {    
-        border-radius: 600px;
-        border: 4px solid rgba(255,255,255,0.7);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-        }
-       h1
-        {
-         font-size: 40px;
-         letter-spacing: 1px;
-         text-shadow: 0 4px 18px rgba(0,0,0,0.55);
-         margin-bottom: 20px;
-        }
-       h2
-        {
-         color: #0f3b4c;
-         letter-spacing: 2px;
-        }
-       p
-        {
-         font-size: 18px;
-         line-height: 1.8;
-         padding-left: 18px;
-         padding-right: 18px;
-        }
-       a
-        {
-         color: #063544;
-         font-weight: bold;
-         text-decoration: none;
-        }
-       a:hover
-        {
-         color: #0b8aa0;
-         text-decoration: underline;
-        }
-       table
-        {
-         overflow: hidden;
-        }
-       body > center > img
-        {
-         max-width: 90%;
-         height: auto;
-         filter: drop-shadow(0 12px 28px rgba(0,0,0,0.45));
-        }
-       @media screen and (max-width: 768px)
-        {
-         table
-          {
-           width: 92% !important;
-          }
-         h1
-          {
-           font-size: 28px;
-          }
-         p
-          {
-           font-size: 16px;
-          }
-        }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--text-main);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  width: min(1220px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 32px;
+}
+
+.top-meta,
+.bottom-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 26px;
+}
+
+.bottom-meta {
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+.hero-card {
+  background: var(--panel-bg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.24);
+}
+
+.hero-top {
+  padding: 24px clamp(20px, 3vw, 42px) 8px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-mark {
+  width: 60px;
+  height: 28px;
+  border-radius: 0 18px 18px 0;
+  background: var(--text-main);
+}
+
+.brand-copy {
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.nav-links {
+  display: flex;
+  gap: clamp(14px, 2vw, 34px);
+  flex-wrap: wrap;
+  padding-top: 6px;
+}
+
+.nav-links a {
+  font-weight: 700;
+}
+
+.hero-copy {
+  padding: 34px clamp(20px, 3vw, 42px) 30px;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(3.7rem, 11vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr auto;
+  gap: 24px;
+  margin-top: 18px;
+  align-items: end;
+}
+
+.info-row p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.cta-link {
+  align-self: center;
+  white-space: nowrap;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.visual-stage {
+  position: relative;
+  min-height: 510px;
+  overflow: hidden;
+  background:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    var(--grid-bg);
+  background-size: 72px 72px, 72px 72px, auto;
+  border-top-right-radius: 170px;
+}
+
+.visual-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 65%, rgba(255,255,255,0.04), transparent 42%);
+  pointer-events: none;
+}
+
+.portrait-wrap {
+  position: absolute;
+  inset: 40px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.portrait-wrap img {
+  width: min(460px, 46vw);
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center top;
+  filter: saturate(1.02) contrast(1.04) brightness(0.98);
+  opacity: 0.98;
+}
+
+.sticker {
+  position: absolute;
+  z-index: 3;
+  color: #111;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.9;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+.sticker small {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.sticker-a {
+  top: 20px;
+  left: 14%;
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  background: var(--chip-a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 20px;
+  transform: rotate(-10deg);
+}
+
+.sticker-b {
+  left: 2.5%;
+  top: 180px;
+  background: var(--chip-b);
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  transform: rotate(-7deg);
+}
+
+.sticker-c {
+  left: 16%;
+  bottom: 62px;
+  background: var(--chip-c);
+  color: #fff7ef;
+  padding: 18px 22px;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  transform: rotate(10deg);
+}
+
+.sticker-d {
+  right: 22%;
+  top: 150px;
+  background: var(--chip-d);
+  color: white;
+  padding: 16px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-align: center;
+  transform: rotate(8deg);
+}
+
+.sticker-e {
+  right: 4%;
+  top: 204px;
+  background: var(--chip-f);
+  padding: 18px;
+  border-radius: 16px;
+  font-size: 1rem;
+  transform: rotate(-14deg);
+}
+
+.sticker-f {
+  right: 18%;
+  bottom: 26px;
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  background: var(--chip-e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 22px;
+  font-size: 0.95rem;
+  transform: rotate(12deg);
+}
+
+.sticker-f span {
+  display: inline-block;
+  border: 4px solid #111;
+  border-radius: 999px;
+  padding: 18px 14px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.info-card {
+  background: rgba(9, 9, 9, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 22px;
+}
+
+.info-card h2 {
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+.info-card p,
+.info-card li {
+  margin: 0;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-card li + li {
+  margin-top: 10px;
+}
+
+.contact-line + .contact-line {
+  margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+  .info-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-link {
+    justify-self: start;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-stage {
+    min-height: 700px;
+    border-top-right-radius: 120px;
+  }
+
+  .portrait-wrap img {
+    width: min(420px, 64vw);
+  }
+}
+
+@media (max-width: 760px) {
+  .top-meta,
+  .bottom-meta,
+  .nav-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3rem, 20vw, 5.4rem);
+  }
+
+  .hero-copy {
+    padding-bottom: 20px;
+  }
+
+  .visual-stage {
+    min-height: 780px;
+    background-size: 48px 48px, 48px 48px, auto;
+    border-top-right-radius: 90px;
+  }
+
+  .portrait-wrap {
+    inset: 120px 0 0 0;
+  }
+
+  .portrait-wrap img {
+    width: min(320px, 72vw);
+    max-height: 460px;
+  }
+
+  .sticker-a {
+    left: 8%;
+    top: 16px;
+    width: 130px;
+    height: 130px;
+    font-size: 0.82rem;
+  }
+
+  .sticker-b {
+    left: 4%;
+    top: 170px;
+    font-size: 0.92rem;
+  }
+
+  .sticker-c {
+    left: 8%;
+    bottom: 160px;
+    font-size: 0.9rem;
+  }
+
+  .sticker-d {
+    right: 6%;
+    top: 250px;
+    font-size: 0.86rem;
+  }
+
+  .sticker-e {
+    right: 2%;
+    top: 410px;
+    font-size: 0.86rem;
+  }
+
+  .sticker-f {
+    right: 10%;
+    bottom: 24px;
+    width: 138px;
+    height: 138px;
+    font-size: 0.8rem;
+  }
+}
 </style>
-</center>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="top-meta">
+      <div>Portfolio Design<br>Exploration</div>
+      <div>Christian V. Tuazon</div>
+      <div>Apr 09<br>2026</div>
+    </section>
+
+    <section class="hero-card">
+      <div class="hero-top">
+        <div class="nav-row">
+          <div class="brand">
+            <span class="brand-mark"></span>
+            <div class="brand-copy">Christian<br>Tuazon</div>
+          </div>
+          <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <h1>Computer Tech</h1>
+        <div class="info-row">
+          <p>
+            I am Christian V. Tuazon, a 20-year-old Computer Technology student at
+            EARIST Manila with growing experience in programming, hardware setup,
+            and practical problem solving.
+          </p>
+          <p>
+            I enjoy building simple systems, learning more about Python and C++,
+            and exploring work that connects tech skills, creativity, and real-world support.
+          </p>
+          <a class="cta-link" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="visual-stage">
+        <div class="sticker sticker-a">
+          <div>Tech<br>Focus</div>
+          <small>Code, hardware<br>and support</small>
+        </div>
+        <div class="sticker sticker-b">Python<br>&amp; C++ Basics</div>
+        <div class="sticker sticker-c">VBA Systems<br>&amp; Interaction<br>Design</div>
+        <div class="sticker sticker-d">Creative<br>Problem Solving<br>&amp; Growth</div>
+        <div class="sticker sticker-e">Branding<br>&amp; Logo Work</div>
+        <div class="sticker sticker-f"><span>PC Setup<br>Usability<br>Testing</span></div>
+
+        <div class="portrait-wrap">
+          <img src="received_2954075558094247.jpeg" alt="Portrait of Christian Tuazon">
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <article class="info-card" id="about">
+        <h2>About Me</h2>
+        <p>
+          I am currently studying Computer Technology and building a stronger foundation
+          in software and computer systems. My interests include programming, esports,
+          database work in Excel VBA, and helping people solve technical problems.
+        </p>
+      </article>
+
+      <article class="info-card" id="skills">
+        <h2>Core Skills</h2>
+        <ul>
+          <li>Python and C++ fundamentals</li>
+          <li>Computer hardware setup and troubleshooting</li>
+          <li>Excel VBA database and enrollment systems</li>
+          <li>Basic floor planning and logo creation</li>
+        </ul>
+      </article>
+
+      <article class="info-card" id="services">
+        <h2>Services</h2>
+        <ul>
+          <li>Enrollment system creation using VBA</li>
+          <li>Beginner-friendly programming support</li>
+          <li>PC setup assistance and technical help</li>
+          <li>Simple branding and logo design work</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="content-grid" id="contact">
+      <article class="info-card">
+        <h2>Contact</h2>
+        <p class="contact-line">Email: tuazonc410@gmail.com</p>
+        <p class="contact-line">Phone: 09511590303</p>
+        <p class="contact-line">Facebook: Christian Tuazon</p>
+      </article>
+
+      <article class="info-card">
+        <h2>Education</h2>
+        <p>
+          EARIST Manila<br>
+          Computer Technology Student
+        </p>
+      </article>
+
+      <article class="info-card">
+        <h2>Goal</h2>
+        <p>
+          To keep improving as a developer and tech professional while creating useful,
+          practical work that can grow into bigger opportunities in the future.
+        </p>
+      </article>
+    </section>
+
+    <section class="bottom-meta">
+      <div>Digital Portfolio &amp; Personal Brand</div>
+      <div>Christian V. Tuazon</div>
+      <div>2026</div>
+    </section>
+  </main>
 </body>
 </html>
+
+
+
+
